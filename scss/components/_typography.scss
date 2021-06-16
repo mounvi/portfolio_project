@@ -1,0 +1,53 @@
+@use'../custom' as *;
+
+.display-2 {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        color: $white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        color: $white;
+        margin-top: 1.2rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.5rem;
+            display:inline-block;
+        }
+    }
+}
+
+// heading line
+
+.heading-line::before {
+    content:"";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+
+.heading-line::after {
+    content:"";
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+
+// gradient
+
+.gradient {
+    background: linear-gradient(to top, rgba(#ffc107, 0.95), rgba($secondary,0.95));
+}

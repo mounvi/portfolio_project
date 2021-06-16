@@ -1,0 +1,60 @@
+@use '../custom' as *;
+@use'../components/mixins' as *;
+
+.portfolio {
+    padding: 1rem 0;
+    text-align: center;
+
+    .portfolio-box {
+        width: 100%;
+        height: 20rem;
+        padding: 2rem;
+        position: relative;
+        overflow: hidden;
+        margin-top: 2rem;
+        border-top: 0.452rem solid yellowgreen;
+
+        img {
+            height: 100%;
+        }
+
+        .portfolio-info {
+            @include introgradient;
+
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            
+
+            .caption {
+                text-align: center;
+                color: $black;
+
+                @include absoluteCenter;
+
+                h4 {
+                    text-transform: uppercase;
+                    display: block;
+                }
+
+            }
+        }
+
+        &:hover{
+
+            img {
+                transform: scale(1.5);
+                @include transitionProperty;
+            }
+            .portfolio-info {
+                opacity: 1;
+                visibility: visible;
+                @include transitionProperty;
+            }
+        }
+    }
+}

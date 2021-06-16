@@ -1,0 +1,34 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+
+.footer {
+    margin-top: 10rem;
+    padding-top: 1rem;
+    background-color: $secondary;
+}
+
+.contact-box {
+    position: relative;
+
+    &__icon {
+        width: 4rem;
+        stroke: $secondary;
+    }
+
+    &__info {
+        padding: 0.4rem;
+
+        &--title {
+            color:$white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        &--subtitle {
+            font-size: 1rem;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
