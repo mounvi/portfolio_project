@@ -10834,9 +10834,9 @@ textarea.form-control-lg {
 }
 
 .footer {
-  margin-top: 10rem;
+  margin-top: 0 auto;
   padding-top: 1rem;
-  background: linear-gradient(to bottom, rgba(57, 197, 224, 0.95), rgba(19, 136, 81, 0.95));
+  background-color: #138851;
 }
 
 .contact-box {
@@ -11049,11 +11049,11 @@ textarea.form-control-lg {
 
 .get-started {
   padding: 4rem 0;
-  background-color: #e9ecef;
+  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.95), rgba(57, 197, 224, 0.95));
 }
 
 .cta {
-  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.95), rgba(57, 197, 224, 0.95));
+  background-color: #dee2e6;
 }
 
 .cta-info {
@@ -11073,11 +11073,6 @@ textarea.form-control-lg {
   position: relative;
   animation: hand-transition 1.5s infinite;
   animation-direction: alternate;
-}
-
-.form-text {
-  color: #8dbd2d;
-  font-size: 2rem;
 }
 
 .form {

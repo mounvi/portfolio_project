@@ -3,12 +3,12 @@
 
 .get-started {
     padding: 4rem 0;
-    background-color: $gray-200;
+    @include introgradient;
     
 }
 
 .cta {
-    @include introgradient;
+    background-color: $gray-300;
 }
 .cta-info {
 
@@ -30,11 +30,6 @@
         animation: hand-transition 1.5s infinite;
         animation-direction: alternate;
     }
-}
-
-.form-text {
-    color: rgb(141, 189, 45);
-    font-size: 2rem;;
 }
 
 .form {

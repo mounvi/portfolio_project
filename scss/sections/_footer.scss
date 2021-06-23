@@ -3,10 +3,10 @@
 
 
 .footer {
-    margin-top: 10rem;
+    margin-top: 0 auto;
     padding-top: 1rem;
     
-    @include gradient;
+   background-color: $secondary;
 }
 
 .contact-box {
