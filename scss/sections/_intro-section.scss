@@ -3,7 +3,7 @@
 
 .intro-section {
     @include introgradient;
-    padding:10rem 0 0 0;
+    padding:6rem 0 0 0;
     width: 100%;
     height: 100%;
 }
@@ -19,7 +19,7 @@
             span {
                 i {
                     font-size: 6rem;
-                    color: $secondary;
+                    color: $primary;
                 }
 
             }

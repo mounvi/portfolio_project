@@ -17,7 +17,7 @@
 
     span {
         position: absolute;
-        background-color:$primary;
+        background-color:$secondary;
         width: 2.5rem;
         height: 2.5rem;
         top:50%;
@@ -37,7 +37,7 @@
         color: $white;
 
         span {
-            background-color: rgba($black, 0.6);
+            background-color: $gray-300;
         }
     }
 }

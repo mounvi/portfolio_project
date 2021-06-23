@@ -4,17 +4,31 @@
 .get-started {
     padding: 4rem 0;
     background-color: $gray-200;
-    margin-top: 5rem;
     
 }
 
+.cta {
+    @include introgradient;
+}
 .cta-info {
-    padding: 10rem;
-    margin: 5rem 0;
+
+    padding: 5rem;
     text-align: center;
+    color: black;
+    position: relative;
 
     &--text {
         width: 100px;
+    }
+}
+.cta-hand-icon {
+    i {
+        color: $black;
+        font-size: 3rem;
+        line-height: 2.5rem;
+        position: relative;
+        animation: hand-transition 1.5s infinite;
+        animation-direction: alternate;
     }
 }
 
@@ -27,8 +41,9 @@
     padding: 3rem;
 
     button {
-        border: none;
-        color:$white;
+        border: 0.1rem solid rgba($black, 0.6);
+        background-color: $gray-300;
+        margin-top: 1rem;
 
         a {
             color:$white;

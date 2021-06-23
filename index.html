@@ -16,8 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="logo image">
-                
+                <img class="logo-img" src="images/logo.png" alt="logo image"> 
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +30,7 @@
                     <a class="nav-link" href="#">Education</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
+                    <a class="nav-link" href="gallery.html" target="_blank">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Interests</a>
@@ -43,20 +42,25 @@
                     </span>
                 </button>
             </div>
-        </div>
+        </div> 
     </nav>
-    <!-- Intro section -->
+    <div class="progress-container shadow">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+        <!-- Intro section -->
     <section id="home" class="intro-section">
+        
         <div class="container">
             <div class="row align-items-center text-white">
                 <div class="col-md-6 intros">
                     <h1 class="display-2"> 
-                        <span class="display-2--intro"> Hey!, I'm Mounvi </span>
+                        <span class="display-2--intro"> Hello!, I'm </span>
+                        <span class="display-2--intro">Mounvi Morthala </span>
                         <span class="display-2--description lh-base"> Dive in to know more about me </span>
                     </h1>
                     <button type="button" class ="rounded-pill btn-rounded"> Get in touch 
                         <span>
-                            <i class="far fa-arrow-right"></i>
+                            <i class="fas fa-arrow-right"></i>
                         </span>
                     </button>
                 </div>
@@ -89,15 +93,6 @@
                     Being a Front End Web Designer is my passion as it involves creativity and patience. I find it interesting as we get to design and nurture the output.
                 </p>
             </div>
-            <div class="row mt-4 mb-4 g-3 text-center">
-                <div class="col-md-12">
-                    <button class="btn btn-outline-primary" type="btn">All</button>
-                    <button class="btn btn-outline-primary" type="btn">Work</button>
-                    <button class="btn btn-outline-primary" type="btn">Interests</button>
-                    <button class="btn btn-outline-primary" type="btn">Gallery</button>
-                </div>
-            </div>
-
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div id="resume" class="portfolio-box shadow">
@@ -109,6 +104,23 @@
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+                <!-- Modal - Resume pop-up-->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -134,57 +146,6 @@
         </div>
     </section>
 
-    <!-- SECTION FOR CAROUSAL POPUP -->
-
-    <!-- <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="row text-center">
-                <h1 class="display-3 fw-bold">
-                    Testimonials
-                </h1>
-                <hr style="width: 100px; height: 3px;" class="mx-auto">
-                <p class="lead-pt-1">what our clients are saying</p>
-            </div>
-
-            <div class="row align-items-center">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          ********** content *********
-                        <div class="testimonials__card">
-                            <p class="lh-lg">
-
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, fugiat, neque nisi aliquid odio, dicta ratione aspernatur quasi nihil consequatur dolore!
-                            </p>
-                        </div>
-                        ******** pictures ********
-                        <div class="testimonials__picture">
-
-                        </div>
-                        <div class="testimonial__name">
-
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </div>
-
-        </div>
-    </section> -->
-
 <section id="portfolio" class="portfolio">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#068f4f" fill-opacity="0.45" d="M0,64L30,69.3C60,75,120,85,180,85.3C240,85,300,75,360,85.3C420,96,480,128,540,138.7C600,149,660,139,720,122.7C780,107,840,85,900,90.7C960,96,1020,128,1080,122.7C1140,117,1200,75,1260,58.7C1320,43,1380,53,1410,58.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
     <div class="container">
@@ -194,6 +155,13 @@
                 <p class="lead">
                  During the most tedious days I try to find my happy place by indulging myself with the things I love.
                 </p>
+            </div>
+            <div class="row mt-4 mb-4 g-3 text-center">
+                <div class="col-md-12">
+                    <h3 class="display-6 fw-bold text-capitalize">Fav Quote</h3>
+                    <p class="lead"> <i class="fas fa-quote-left"></i> Never let others determine who you are, happiness lies within you.<i class="fas fa-quote-right"></i></p>
+
+                </div>
             </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -232,9 +200,9 @@
 </section>
 
 <!-- Contact Me section -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#068f4f" fill-opacity="0.45" d="M0,64L30,69.3C60,75,120,85,180,85.3C240,85,300,75,360,85.3C420,96,480,128,540,138.7C600,149,660,139,720,122.7C780,107,840,85,900,90.7C960,96,1020,128,1080,122.7C1140,117,1200,75,1260,58.7C1320,43,1380,53,1410,58.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
 
 <section id="contact" class="get-started">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#068f4f" fill-opacity="0.45" d="M0,64L30,69.3C60,75,120,85,180,85.3C240,85,300,75,360,85.3C420,96,480,128,540,138.7C600,149,660,139,720,122.7C780,107,840,85,900,90.7C960,96,1020,128,1080,122.7C1140,117,1200,75,1260,58.7C1320,43,1380,53,1410,58.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
     <div class="container">
         <div class="row text-center mt-5">
             <h1 class="display-3 fw-bold text-capitalize">Get Connected</h1>
@@ -243,14 +211,17 @@
 
         <!-- CTA CONTENT -->
         <div class="row mt-4 text-center">
-            <div class="col-12 col-lg-6 gradient shadow p-3">
+            <div class="col-12 col-lg-6 shadow p-3 cta">
                 <div class="cta-info">
                     <p class="lh-lg">Please let me know for any comments or questions. Leave a message or send an email. Will respond to you within 2 business days</h4>
                 </div>
+                <div class="col-lg-6 col-md-6">
+                    <span class="cta-hand-icon"><i class="far fa-hand-point-right"></i></span>
+                </div>
+                
             </div>
             <div class="col-12 col-lg-6 bg-white shadow p-3">
                 <div class="form w-100 pb-2">
-                    <h4 class="form-text">Get Started</h4>
                     <form action="#" class="row">
                         <div class="col-lg-6 col-md-6 mb-3">
                             <input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg">
@@ -337,14 +308,18 @@
 
 <script src="assets/vendors/js/glightbox.min.js"></script>
 
-<!-- <script type="text/javascript">
-    const lightbox = GLightbox({
-        'href': 'https://picsum.photos/1200/800',
-        'type': 'image',
-        'title': 'My Title',
-        'description': 'Example',
-    }); -->
-</script>
+<script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+
 <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>

@@ -3,10 +3,10 @@
 
 .gallery-section {
     @include introgradient;
-    padding: 4rem;
+    padding: 3rem;
 }
 .gallery {
-    margin: 10px 50px;
+    margin: 10px 10px;
 }
 
 .gallery img {
@@ -15,7 +15,6 @@
     width: 200px;
 }
 
-.gallery img:hover {
-    filter:grayscale(100%);
+.gallery img:hover { 
     transform: scale(1.1);
 }
