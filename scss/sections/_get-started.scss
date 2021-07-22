@@ -22,6 +22,10 @@
     }
 }
 .cta-hand-icon {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+    
     i {
         color: $black;
         font-size: 3rem;

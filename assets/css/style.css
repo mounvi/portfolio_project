@@ -10869,7 +10869,7 @@ textarea.form-control-lg {
 }
 
 .gallery {
-  margin: 10px 10px;
+  margin: 5px 5px;
 }
 
 .gallery img {
@@ -11066,6 +11066,11 @@ textarea.form-control-lg {
   width: 100px;
 }
 
+@media (max-width: 575.98px) {
+  .cta-hand-icon {
+    display: none;
+  }
+}
 .cta-hand-icon i {
   color: #000;
   font-size: 3rem;
